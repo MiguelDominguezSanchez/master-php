@@ -23,7 +23,7 @@
             ."<li>Fifa</li>"
             ."<li>Mario Bros</li>"
             ."</ul>";
-        
+
         //echo "<br>HOLA HOLA HOLA<br>";
 
         // Párrafo explicativo
