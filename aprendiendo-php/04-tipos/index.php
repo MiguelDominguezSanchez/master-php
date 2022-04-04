@@ -11,11 +11,19 @@
  * Objetos
  */
 
-$numero = 100;
+$numero_hola = 100;
 $decimal = 27.9;
-$texto = "Soy un texto";
+$texto = "Soy un texto $numero_hola";
 $verdadero = false;
 $nula = null;
 
-echo gettype($nulla);
+echo $texto;
+
+// echo gettype($nulla);
+
+// Debugear
+$mi_nombre[] = "Victor Robles WEB";
+$mi_nombre[] = "Victor Robles WEB";
+
+// var_dump($mi_nombre);
 
