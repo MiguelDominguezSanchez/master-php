@@ -18,15 +18,22 @@ echo "<h1>El resultado es: $resultado</h1>";
 
 // Ejemplo tabla multiplicar
 
-if(isset($_GET['numero'])){
+if (isset($_GET['numero'])) {
     // Cambiar tipo de dato
     $numero = (int)$_GET['numero'];
-}  else {
+} else {
     $numero = 1;
 }
 
 echo "<h1>Tabla de multiplicar del número $numero</h1>";
 
-for($contador = 1; $contador <= 10; $contador++){
-    echo "$numero x $contador = ".($numero*$contador)."<br/>";
+for ($contador = 1; $contador <= 10; $contador++) {
+
+    if ($numero == 45) {
+        echo "No se pueden mostrar estas operaciones prohibidas";
+        break;
+    }
+
+
+    echo "$numero x $contador = " . ($numero * $contador) . "<br/>";
 }
