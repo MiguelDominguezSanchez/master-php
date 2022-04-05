@@ -157,9 +157,26 @@ echo "<hr/>";
 $pais = "Francia";
 if($pais == "México" || $pais == "España" || $pais == "colombia") {
     echo "En este pais se hable español";
+} else {
+    echo "no se habla español";
 }
 
+// GOTO
+goto ejecuta_aqui;
+echo "<h3>Instrucción 1</h3>";
+echo "<h3>Instrucción 2</h3>";
+echo "<h3>Instrucción 3</h3>";
+echo "<h3>Instrucción 4</h3>";
 
+$pais = "Francia";
+if($pais == "México" || $pais == "España" || $pais == "colombia") {
+    echo "En este pais se hable español";
+} else {
+    echo "no se habla español";
+}
+
+ejecuta_aqui:
+echo "<h1>Me he saltado 4 echos</h1>";
 
 
 
