@@ -11,3 +11,22 @@ echo 'Diivisión: '.($numero1/$numero2).'<br>';
 echo 'Resto: '.($numero1%$numero2).'<br>';
 
 // Operadores incermento y decrremento
+$year = 2019;
+
+// Incremento
+// $year = $year + 1;
+$year++;
+
+// Decremento
+// $year = $year - 1;
+$year--;
+
+// Pre-incremento
+// $year = 1 + $year;
+++$year;
+
+// Pre-decremento
+// $year = 1 - $year;
+--$year;
+
+echo "<h1>$year</h1>";
