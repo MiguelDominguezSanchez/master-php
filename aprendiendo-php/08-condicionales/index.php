@@ -19,6 +19,13 @@
  * > mayor que
  * <= menor o igual wue
  * >= mayor o igual que
+ *
+ *
+ * // OPERADORRES LÓGICOS
+ * && AND Y
+ * || OR O
+ * ! NOT NO
+ * and, or
  * */
 
 // Ejemplo 1
@@ -104,6 +111,58 @@ if($dia == 1) {
 } else {
     echo "Es finde";
 }
+
+echo "<hr/>";
+
+// Ejemplo 5
+$edad1 = 18;
+$edad = 64;
+
+$edad_oficial = 20;
+
+if($edad_oficial >= $edad && $edad_oficial <= $edad2){
+    echo "ESTA EN EDAD DE TRABAJAR";
+} else {
+    echo "NO PUEDE TRABAJAR";
+}
+
+echo "<hr/>";
+
+$pais = "Francia";
+if($pais == "México" || $pais == "España" || $pais == "colombia") {
+    echo "En este pais se hable español";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
