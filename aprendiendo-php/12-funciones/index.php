@@ -63,26 +63,36 @@ function calculadora($numero1, $numero2, $negrita = false){
     $multi = $numero1 * $numero2;
     $division = $numero1 / $numero2;
 
-    if($negrita) {
-        echo "<h1>";
-    }
-
-    echo "Suma: $suma <br/>";
-    echo "Resta: $resta <br/>";
-    echo "Multiplicación: $multi <br/>";
-    echo "Division: $division<br/>";
-
+    $cadena_texto = "";
 
     if($negrita) {
-        echo "</h1>";
+        $cadena_texto .= "<h1>";
     }
 
-    echo "<hr/>";
+    $cadena_texto .= "Suma: $suma <br/>";
+    $cadena_texto .= "Resta: $resta <br/>";
+    $cadena_texto .= "Multiplicación: $multi <br/>";
+    $cadena_texto .= "Division: $division<br/>";
+
+    if($negrita) {
+        $cadena_texto .= "</h1>";
+    }
+
+    $cadena__texto .="<hr/>";
+
+    var_dump($cadena_texto);
+
+    return $cadena_texto;
+
 }
 
 calculadora(10, 20, true);
-calculadora(12, 55, true);
-calculadora(15, 32, false);
+
+function devuelveElNombre($nombre){
+    return "El nombre es: $nombre";
+}
+
+echo devuelveElNombre("Victor Robles");
 
 
 
