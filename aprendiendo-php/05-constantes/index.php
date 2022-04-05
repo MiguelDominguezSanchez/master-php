@@ -13,3 +13,6 @@ echo "<h1>".web."</h1>";
 $web = "victorroblesweb.es/academy";
 $web = "victorroblesweb.es/cursos";
 echo "<h1>".$web."</h1>";
+
+// Constantes predefinidas
+echo PHP_OS;
