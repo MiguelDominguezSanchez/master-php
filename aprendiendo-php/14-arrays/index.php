@@ -29,8 +29,6 @@ for($i = 0; $i < count($peliculas); $i++){
 }
 echo "</ul>";
 
-
-
 // Recorrer con foreach
 echo "<h1>Listado de cantantes</h1>";
 
@@ -39,3 +37,52 @@ foreach($cantantes as $cantante){
     echo "<li>".$cantante."</li>";
 }
 echo "</ul>";
+
+// Arrays multidimensionales
+
+$contactos = array(
+    array(
+        'nombre' => 'Antonio',
+        'email' => 'antonio@antonio.com'
+    ),
+    array(
+        'nombre' => 'Luis',
+        'email' => 'luis@luis.com'
+    ),
+    array(
+        'nombre' => 'Salvador',
+        'email' => 'salvador@salvador.com'
+    ),
+);
+
+foreach ($contactos as $key => $contacto){
+    var_dump($contacto['nombre']);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
