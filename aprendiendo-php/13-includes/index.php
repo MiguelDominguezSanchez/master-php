@@ -1,5 +1,5 @@
 <?php
-include 'includes/cabecera.php';
+require_once 'includes/cabecera.php';
 ?>
 <!-- Contenido -->
 <div>
@@ -8,4 +8,4 @@ include 'includes/cabecera.php';
 </div>
 <?php var_dump($nombre); ?>
 
-<?php include 'includes/footer.php'; ?>
+<?php require_once 'includes/footer.php'; ?>
