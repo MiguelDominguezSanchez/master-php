@@ -14,7 +14,7 @@
       <input type="text" name="nombre" />
     </p>
     <label for="apellido">Apellido:</label>
-    <p><input type="text" name="apellido" placeholder="Mete tu  apellido" /></p>
+    <p><input type="text" name="apellido" /></p>
     <input type="submit" value="Enviar" />
   </form>
 </body>
