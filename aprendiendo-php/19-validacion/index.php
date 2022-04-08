@@ -9,6 +9,16 @@
 <body>
   <h1>Validar formularios en PHP</h1>
 
+  <?php
+  if (isset($_GET['error'])) {
+    $error = $_GET['error'];
+    if ($error == 'faltan datos') {
+      echo '<strong style="color:red">Introduce todos los datos en todos los campos del formulario</strong>';
+    }
+  }
+
+  ?>
+
   <form method="POST" action="procesar_formularios.php">
     <label for="nombre">Nombre</label><br>
     <input type="text" name="nombre" required="required" pattern="[A-Za-z]+"><br>
